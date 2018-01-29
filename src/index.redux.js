@@ -23,3 +23,11 @@ export function addGun() {
 export function removeGun() {
 	return {type: REMOVE_GUN}
 }
+
+export function delayAddGun() {
+	return dispatch=>{
+		setTimeout(()=>{
+			dispatch(addGun())
+		},2000)
+	}
+}
