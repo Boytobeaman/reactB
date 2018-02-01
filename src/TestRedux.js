@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addGun,removeGun,delayAddGun } from './index.redux';
 
-import logo from './logo.svg';
+
 import './App.css';
 
-
-const actionCreators = {addGun,removeGun,delayAddGun}
 
 @connect(
   state=>({num:state.counter}),
